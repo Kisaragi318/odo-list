@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的待辦清單</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>我的待辦清單</h1>
+    <p class="subtitle">把要完成的事情記下來，一件一件完成！</p>
+    <label for="taskInput">新增待辦事項</label>
+    <div class="input-row">
+      <input id="taskInput" type="text" placeholder="例如：完成網頁程式設計作業">
+      <button id="addButton">新增</button>
+    </div>
+    <p class="summary">尚未完成：<strong id="remainingCount">0</strong> 件</p>
+    <ul id="taskList" class="task-list"></ul>
+    <p id="emptyMessage" class="empty-message">目前沒有待辦事項，新增一件吧！</p>
+    <button id="clearButton" class="clear-button">清空全部</button>
+    <p id="notice" class="notice" role="status"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
